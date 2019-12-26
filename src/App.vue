@@ -45,7 +45,8 @@ export default {
   },
   created() {
     axios
-      .get("http://jsonplaceholder.typicode.com/todos?_limit=5")
+      //.get("http://jsonplaceholder.typicode.com/todos?_limit=5")
+      .get("http://localhost:5000")
       .then(res => (this.todos = res.data))
       .catch(err => console.log(err));
   }
